@@ -1701,7 +1701,13 @@ input, select, textarea {
   image-rendering:auto;
 }
 
-#header .logo:before { display: none; }   /* remove template ring */
+#header .logo{
+  border-radius:50%;
+  overflow:hidden;
+  position:relative;
+  border:3px solid rgba(255,255,255,0.18); /* thickness = 3px */
+}
+
 #header .logo .icon { display: none; }    /* hide the gem */
 #header .logo .ac-avatar {
   position: absolute; 
@@ -1713,6 +1719,7 @@ input, select, textarea {
   display: block; 
   border: 0;
 }
+
 
 
 
