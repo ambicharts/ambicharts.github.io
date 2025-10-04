@@ -1700,28 +1700,13 @@ input, select, textarea {
   border: 2px solid rgba(255,255,255,0.25);
 }
 
-/* Use the template's original logo sizes, but show a circular photo */
+/* Use the template's logo sizes, show photo*/
 #header .logo{
-  width: 5.5em;              /* desktop default used by Dimension */
-  height: 5.5em;
+  background: url("images/avatar.jpg") center/cover no-repeat;
   border-radius: 50%;
   overflow: hidden;
-  position: relative;
 }
-#header .logo:before{ display: none; }  /* hide the ring */
-#header .logo .icon{ display: none; }   /* hide the FA gem */
-#header .logo img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border: 0;
-}
+/* keep the span for sizing, but hide the gem and the ring */
+#header .logo .icon{ opacity: 0; }
+#header .logo:before{ display: none; }
 
-/* match Dimension's responsive sizes */
-@media screen and (max-width: 736px){
-  #header .logo{ width: 4.75em; height: 4.75em; }
-}
-@media screen and (max-width: 480px){
-  #header .logo{ width: 4.5em; height: 4.5em; }
-}
