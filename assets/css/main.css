@@ -1664,7 +1664,8 @@ input, select, textarea {
 
 /* Tighter spacing between legal links and footer */
 #legal-links { margin: 0; }
-#footer { margin-top: 0; padding-top: .1rem; }
+#footer { margin-top: 0; padding-top: .25rem; }
+
 
 
 
