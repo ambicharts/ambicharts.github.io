@@ -1623,6 +1623,22 @@ input, select, textarea {
 
 		}
 
+/* FAQ accordion with separators */
+#faq details { margin: 0; padding: 0; border-top: 1px solid rgba(255,255,255,0.15); }
+#faq details:first-of-type { border-top: 0; }
+#faq summary { cursor: pointer; padding: 12px 0; font-weight: 600; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+
+/* Answer area */
+#faq details > div { padding: 8px 0 18px; color: #a9b4c4; }
+
+/* Extra breathing room when open (blank line feel) */
+#faq details[open] > div { padding-bottom: 26px; }
+
+/* Small vertical gap between items, on top of the line */
+#faq details + details { margin-top: 6px; }
+
+
 /* Footer */
 
 	#footer {
@@ -1665,6 +1681,7 @@ input, select, textarea {
 /* Tighter spacing between legal links and footer */
 #legal-links { margin: 0; }
 #footer { margin-top: 0; padding-top: .25rem; }
+
 
 
 
