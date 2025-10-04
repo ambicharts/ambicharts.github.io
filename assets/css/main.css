@@ -1690,6 +1690,16 @@ input, select, textarea {
 }
 
 
+/* logo image instead of Font Awesome icon */
+#header .logo .icon { display: none; }           /* hide old gem if still there */
+#header .logo .logo-img{
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  border: 2px solid rgba(255,255,255,0.25);
+}
+
 
 
 
