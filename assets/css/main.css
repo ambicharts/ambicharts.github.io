@@ -1705,7 +1705,7 @@ input, select, textarea {
   border-radius:50%;
   overflow:hidden;
   position:relative;
-  border:3px solid rgba(255,255,255,0.18); /* thickness = 3px */
+  border:5px solid rgba(255,255,255,0.18); /* thickness = 3px */
 }
 
 #header .logo .icon { display: none; }    /* hide the gem */
@@ -1719,6 +1719,7 @@ input, select, textarea {
   display: block; 
   border: 0;
 }
+
 
 
 
