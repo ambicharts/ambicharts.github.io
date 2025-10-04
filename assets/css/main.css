@@ -1689,28 +1689,7 @@ input, select, textarea {
   background-image: none !important;
 }
 
-
-/* logo image instead of Font Awesome icon */
-#header .logo .icon { display: none; }           /* hide old gem if still there */
-#header .logo .logo-img{
-  width: 72px; height: 72px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: inline-block;
-  border: 2px solid rgba(255,255,255,0.25);
-}
-
-/* Use the template's logo sizes, show photo*/
-#header .logo{
-  background: url("images/avatar.jpg") center/cover no-repeat;
-  border-radius: 50%;
-  overflow: hidden;
-}
-/* keep the span for sizing, but hide the gem and the ring */
-#header .logo .icon{ opacity: 0; }
-#header .logo:before{ display: none; }
-
-#header .logo:before{ display:none; }
-
+/* Remove the header logo entirely */
+#header .logo { display: none !important; }
 
 
