@@ -1697,7 +1697,6 @@ input, select, textarea {
   width:100%; height:100%;
   object-fit:cover; display:block; border:0;
   border-radius:50%;                /* smoother than clip-path */
-  box-shadow:0 0 0 3px rgba(255,255,255,0.12);  /* soft edge */
   image-rendering:auto;
 }
 
@@ -1705,7 +1704,7 @@ input, select, textarea {
   border-radius:50%;
   overflow:hidden;
   position:relative;
-  border:5px solid rgba(255,255,255,0.18); /* thickness = 3px */
+  border:5px solid rgba(255,255,255,1); /* thickness = 3px */
 }
 
 #header .logo .icon { display: none; }    /* hide the gem */
@@ -1719,6 +1718,7 @@ input, select, textarea {
   display: block; 
   border: 0;
 }
+
 
 
 
