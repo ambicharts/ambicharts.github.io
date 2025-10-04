@@ -1701,5 +1701,26 @@ input, select, textarea {
 }
 
 
+/* Replace gem with round photo */
+#header .logo { 
+  width: 5.5em; 
+  height: 5.5em; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  position: relative;
+}
+/* remove the template ring */
+#header .logo:before { display: none; }
+/* hide old FA icon if present */
+#header .logo .icon { display: none; }
+/* make the image fill the circle */
+#header .logo img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+  border: 0;
+}
+
 
 
