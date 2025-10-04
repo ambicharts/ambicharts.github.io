@@ -1682,6 +1682,13 @@ input, select, textarea {
 #legal-links { margin: 0; }
 #footer { margin-top: 0; padding-top: .25rem; }
 
+/* Force black background, remove bg.jpg */
+#bg:before {
+  content: "";
+  background: #000 !important;
+  background-image: none !important;
+}
+
 
 
 
