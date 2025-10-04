@@ -1710,3 +1710,7 @@ input, select, textarea {
 #header .logo .icon{ opacity: 0; }
 #header .logo:before{ display: none; }
 
+#header .logo:before{ display:none; }
+
+
+
