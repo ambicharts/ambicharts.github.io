@@ -1661,3 +1661,9 @@ input, select, textarea {
 		}
 
 #footer .copyright { font-size: 12px; opacity: .75; }
+
+/* Tighter spacing between legal links and footer */
+#legal-links { margin: 0; }
+#footer { margin-top: 0; padding-top: .25rem; }
+
+
