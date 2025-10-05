@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Add a sitemap later when you have one:
+# Sitemap: https://ambicharts.github.io/sitemap.xml
