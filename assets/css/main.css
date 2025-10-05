@@ -1721,6 +1721,17 @@ input, select, textarea {
 }
 
 
+/* Fix: stop FAQ hover from bleeding into the next tab */
+#header nav ul li a { 
+  overflow: hidden;          /* clips hover bg/pseudo-element exactly to the button */
+  border-radius: 0.35em;     /* keep the pill shape */
+}
+
+/* Optional: add a tiny gap between tabs so any glow can't touch the next one */
+#header nav ul li { 
+  margin: 0 0.25rem; 
+}
+
 
 
 
