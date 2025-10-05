@@ -249,6 +249,25 @@
   <p><small>How to find it: TradingView → Profile → copy your exact username (case and underscores matter).</small></p>
 </article>
 
+						<!-- ACTIVATE -->
+<article id="activate">
+  <h2 class="major">ACTIVATE ACCESS</h2>
+  <p>Thank you for choosing <strong>ambicharts PREMIUM</strong>!</p>
+  <p>To activate your license, please send your exact <strong>TradingView username</strong> by email. I’ll grant access within 24 hours (TradingView → Indicators → Invite Only Scripts).</p>
+
+  <ul class="actions">
+    <li>
+      <a class="button primary"
+         href="mailto:hello@ambicharts.com?subject=TradingView%20username%20for%20ambicharts%20Premium&body=Hello,%0D%0A%0D%0AMy%20TradingView%20username%3A%20">
+        Send TradingView username
+      </a>
+    </li>
+  </ul>
+
+  <p><small>Tip: copy your username from your TradingView profile. Case and underscores must match exactly.</small></p>
+</article>
+
+
 
 </div>
 
@@ -282,41 +301,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<script>
-  (function(){
-    var btn = document.getElementById('act-send');
-    if(!btn) return;
-    btn.addEventListener('click', function(e){
-      e.preventDefault();
-      var u = (document.getElementById('act-username')||{}).value || '';
-      var o = (document.getElementById('act-order')||{}).value || '';
-      var n = (document.getElementById('act-notes')||{}).value || '';
-      if(!u.trim()){
-        alert('Please enter your exact TradingView username.');
-        return;
-      }
-      var subject = 'TradingView username for order ' + (o ? o : '(no order number yet)');
-      var body = [
-        'Hello,',
-        '',
-        'My TradingView username: ' + u,
-        'Order number: ' + (o || '—'),
-        (n ? ('Notes: ' + n) : '')
-      ].join('\n');
-      var mailto = 'mailto:hello@ambicharts.com'
-                 + '?subject=' + encodeURIComponent(subject)
-                 + '&body='    + encodeURIComponent(body);
-      window.location.href = mailto;
-    });
-  })();
-</script>
-
-
-
-
 
 	</body>
 </html>
+
 
 
 
