@@ -1,96 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!-- AmbiCharts · LIVECHARTS (standalone article page matching Dimension theme) -->
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LIVECHARTS · AmbiCharts</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>LIVECHARTS · AmbiCharts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Use your existing site styles -->
-  <link rel="stylesheet" href="/assets/main.css" />
+    <!-- Load the same theme assets as index.html -->
+    <link rel="stylesheet" href="/assets/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/noscript.css" /></noscript>
 
-  <!-- optional: favicon (already in your repo) -->
-  <link rel="icon" href="/favicon-ambicharts.svg" type="image/svg+xml" />
+    <!-- Optional: your favicon -->
+    <link rel="icon" href="/favicon-ambicharts.svg" type="image/svg+xml" />
+  </head>
+  <body class="is-preload">
 
-  <style>
-    /* Tiny helpers that won't override your theme */
-    .breadcrumbs {
-      font-size: 0.9rem;
-      opacity: 0.8;
-      margin: 0 0 1rem 0;
-    }
-    .breadcrumbs a { border-bottom: none; }
-    .placeholder {
-      border: 1px dashed rgba(255,255,255,0.15);
-      border-radius: 0.6rem;
-      padding: 1rem 1.2rem;
-      margin: 0.5rem 0 1.5rem 0;
-      opacity: 0.9;
-    }
-    /* spacing similar to your article blocks */
-    .section { margin: 2rem 0 1rem 0; }
-  </style>
-</head>
-<body>
+    <!-- Background (required by Dimension for the dark backdrop) -->
+    <div id="bg"></div>
 
-  <!-- Simple centered container to mirror your article look -->
-  <div id="main" class="inner">
+    <!-- Wrapper (centers the grey article panel) -->
+    <div id="wrapper">
 
-    <!-- Breadcrumbs -->
-    <p class="breadcrumbs">
-      <a href="/">home</a> › <a href="/#indicators">indicators</a> › <strong>livecharts</strong>
-    </p>
+      <!-- Main content: one active article, like your INDICATORS section -->
+      <div id="main">
+        <article id="livecharts" class="active">
+          <h2 class="major">LIVECHARTS</h2>
 
-    <!-- Match INDICATORS header style -->
-    <h2 class="major">LIVECHARTS</h2>
+          <!-- Breadcrumb (simple text; uses your global styles) -->
+          <p style="opacity:.8;margin:-0.5rem 0 1rem 0;">
+            <a href="/">home</a> › <a href="/#indicators">indicators</a> › <strong>livecharts</strong>
+          </p>
 
-    <p>This page will host the public live charts. Step 1: structure only. Step 2: we’ll add the widgets.</p>
+          <p>This page will host the public live charts. Step 1: structure only. Step 2: we’ll add the widgets.</p>
 
-    <!-- ======= CRYPTO ======= -->
-    <div class="section">
-      <h3>Crypto</h3>
-      <div class="placeholder">
-        Planned assets: <strong>ETH, XRP</strong><br />
-        Views: <em>Daily, Weekly, Monthly, Superscalp</em>
+          <hr />
+
+          <h3>Crypto</h3>
+          <p>
+            <strong>Planned assets:</strong> ETH, XRP<br />
+            <em>Views:</em> Daily, Weekly, Monthly, Superscalp
+          </p>
+
+          <hr />
+
+          <h3>Stocks</h3>
+          <p>
+            <strong>Planned assets:</strong> AAPL, MSFT<br />
+            <em>Views:</em> Daily, Weekly, Monthly, Superscalp
+          </p>
+
+          <hr />
+
+          <h3>FX</h3>
+          <p>
+            <strong>Planned assets:</strong> USD/JPY, GBP/USD<br />
+            <em>Views:</em> Daily, Weekly, Monthly, Superscalp
+          </p>
+
+          <hr />
+
+          <h3>Indices</h3>
+          <p>
+            <strong>Planned assets:</strong> S&amp;P 500, NAS100<br />
+            <em>Views:</em> Daily, Weekly, Monthly, Superscalp
+          </p>
+
+          <hr />
+
+          <h3>Commodities</h3>
+          <p>
+            <strong>Planned assets:</strong> OIL, GOLD<br />
+            <em>Views:</em> Daily, Weekly, Monthly, Superscalp
+          </p>
+
+          <hr />
+
+          <p style="opacity:.8">
+            Later we’ll embed TradingView widgets in each section. No private indicators will load in widgets (by design).
+          </p>
+        </article>
       </div>
+
+      <!-- Optional: a tiny footer link back to home (uses your theme styles) -->
+      <footer id="footer">
+        <p class="copyright">
+          <a href="/">← back to home</a>
+        </p>
+      </footer>
     </div>
 
-    <!-- ======= STOCKS ======= -->
-    <div class="section">
-      <h3>Stocks</h3>
-      <div class="placeholder">
-        Planned assets: <strong>AAPL, MSFT</strong><br />
-        Views: <em>Daily, Weekly, Monthly, Superscalp</em>
-      </div>
-    </div>
-
-    <!-- ======= FX ======= -->
-    <div class="section">
-      <h3>FX</h3>
-      <div class="placeholder">
-        Planned assets: <strong>USD/JPY, GBP/USD</strong><br />
-        Views: <em>Daily, Weekly, Monthly, Superscalp</em>
-      </div>
-    </div>
-
-    <!-- ======= INDICES ======= -->
-    <div class="section">
-      <h3>Indices</h3>
-      <div class="placeholder">
-        Planned assets: <strong>S&amp;P 500, NAS100</strong><br />
-        Views: <em>Daily, Weekly, Monthly, Superscalp</em>
-      </div>
-    </div>
-
-    <!-- ======= COMMODITIES ======= -->
-    <div class="section">
-      <h3>Commodities</h3>
-      <div class="placeholder">
-        Planned assets: <strong>OIL, GOLD</strong><br />
-        Views: <em>Daily, Weekly, Monthly, Superscalp</em>
-      </div>
-    </div>
-
-  </div>
-
-</body>
+    <!-- Scripts (required by Dimension for layout/animations/esc) -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>
