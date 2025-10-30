@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIVECHARTS · AmbiCharts</title>
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8e8ea;
+      --muted: #9aa0a6;
+      --border: #2a2e35;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+    a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--muted);
+    }
+    a:hover {
+      color: #fff;
+      border-bottom-color: var(--fg);
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    /* Breadcrumbs */
+    .crumbs {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .crumbs a {
+      color: var(--muted);
+      border: none;
+    }
+    .crumbs span.sep {
+      margin: 0 6px;
+      color: var(--muted);
+    }
+
+    /* Page header: ALL CAPS with underline (match INDICATORS) */
+    .page-title {
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      font-size: 36px;
+      text-transform: uppercase;
+      margin: 8px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    /* Section headings (categories) */
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .placeholder {
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin: 10px 0 22px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Breadcrumbs: home → indicators → livecharts -->
+    <div class="crumbs">
+      <a href="/">home</a>
+      <span class="sep">›</span>
+      <a href="#indicators">indicators</a>
+      <span class="sep">›</span>
+      <strong>livecharts</strong>
+    </div>
+
+    <h1 class="page-title">LIVECHARTS</h1>
+
+    <p class="note">
+      This page will host the public live charts. Step 1: structure only.
+      Step 2: add widgets later.
+    </p>
+
+    <!-- ========== CRYPTO ========== -->
+    <h2>Crypto</h2>
+    <div class="placeholder">
+      Planned assets: ETH, XRP.<br>
+      Views: Daily, Weekly, Monthly, Superscalp.
+    </div>
+
+    <!-- ========== STOCKS ========== -->
+    <h2>Stocks</h2>
+    <div class="placeholder">
+      Planned assets: AAPL, MSFT.<br>
+      Views: Daily, Weekly, Monthly, Superscalp.
+    </div>
+
+    <!-- ========== FX ========== -->
+    <h2>FX</h2>
+    <div class="placeholder">
+      Planned assets: USD/JPY, GBP/USD.<br>
+      Views: Daily, Weekly, Monthly, Superscalp.
+    </div>
+
+    <!-- ========== INDICES ========== -->
+    <h2>Indices</h2>
+    <div class="placeholder">
+      Planned assets: S&P 500, NAS100.<br>
+      Views: Daily, Weekly, Monthly, Superscalp.
+    </div>
+
+    <!-- ========== COMMODITIES ========== -->
+    <h2>Commodities</h2>
+    <div class="placeholder">
+      Planned assets: OIL, GOLD.<br>
+      Views: Daily, Weekly, Monthly, Superscalp.
+    </div>
+  </div>
+</body>
+</html>
