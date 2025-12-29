@@ -1720,6 +1720,11 @@ input, select, textarea {
   border: 0;
 }
 
+/* Remove the vertical divider line above header elements */
+#header > *:before {
+  display: none !important;
+}
+
 
 
 
